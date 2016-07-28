@@ -1,0 +1,8 @@
+
+index:
+    path:     /index
+    defaults: { _controller: AppBundle:Products:index }
+
+delete:
+    path:     /delete
+    defaults: { _controller: AppBundle:Products:delete }

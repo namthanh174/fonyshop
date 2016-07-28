@@ -1,0 +1,28 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Products:index{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Products:index page</h1>
+<ul>
+{% for product in listProducts %}
+<li>{{ product.name }}, category: {{ product.categoryName }}</li>
+{% endfor %}
+</ul>
+
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.task) }}
+    {{ form_row(form.dueDate) }}
+{{ form_end(form) }}
+
+
+
+
+{% endblock %}
+
+
+
+
+

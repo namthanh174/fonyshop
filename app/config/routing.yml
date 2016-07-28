@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+bundle_routing:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix: /products
+bundle_routing:
+    resource: "@Thanh/TestBundle/Resources/config/routing.yml"
+    prefix: /demo
